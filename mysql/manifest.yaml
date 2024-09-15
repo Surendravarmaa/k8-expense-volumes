@@ -37,7 +37,7 @@ spec:
       containers:
       - name: mysql
         image: surendravarmaa/mysql:v1.0
-        nodeSelector :
+        nodeSelector:
           topology.kubernetes.io/zone: us-east-1d
         ports:
         - containerPort: 80
