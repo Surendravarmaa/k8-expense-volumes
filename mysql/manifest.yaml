@@ -71,4 +71,3 @@ volumeClaimTemplates:
     resources:
       requests:
         storage: 1G
----
