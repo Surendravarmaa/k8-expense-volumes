@@ -61,13 +61,13 @@ spec:
         volumeMounts:
         - name: mysql
           mountPath: /var/lib/mysql
-# PVC declaration, it is mandatory
-volumeClaimTemplates:
-- metadata:
-    name: mysql
-  spec:
-    accessMode: [ "ReadWriteOnce" ]
-    storageClassName: "expense-ebs"
-    resources:
-      requests:
-        storage: 1G
+  # PVC declaration, it is mandatory
+  volumeClaimTemplates:
+  - metadata:
+      name: mysql
+    spec:
+      accessMode: [ "ReadWriteOnce" ]
+      storageClassName: "expense-ebs"
+      resources:
+        requests:
+          storage: 1G
